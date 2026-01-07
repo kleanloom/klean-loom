@@ -25,27 +25,28 @@
        padding: 20px;
      }
  
+     /* Hero Section */
      header {
        background: #8B4513;
        color: #fff;
-       padding: 40px 20px;
+       padding: 15px 20px; /* height chhota kiya */
        text-align: center;
        border-radius: 0 0 20px 20px;
      }
  
      header h1 {
        margin: 0;
-       font-size: 36px;
+       font-size: 26px;
      }
  
      header p {
-       font-size: 18px;
-       margin-top: 10px;
+       font-size: 15px;
+       margin-top: 5px;
      }
  
      .section {
        background: #fff;
-       padding: 25px 30px;
+       padding: 20px 25px;
        border-radius: 12px;
        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
        margin: 25px 0;
@@ -53,7 +54,7 @@
  
      h2 {
        color: #8B4513;
-       font-size: 24px;
+       font-size: 22px;
        margin-bottom: 15px;
      }
  
@@ -71,16 +72,36 @@
        margin-bottom: 6px;
      }
  
-     .social-links a {
-       display: inline-block;
-       margin-right: 15px;
-       font-size: 16px;
-       color: #8B4513;
-       font-weight: bold;
+     /* FAQ Accordion */
+     .faq-item {
+       border-bottom: 1px solid #ddd;
+       padding: 10px 0;
+       cursor: pointer;
+       position: relative;
      }
  
-     .social-links a:hover {
-       text-decoration: underline;
+     .faq-item h3 {
+       margin: 0;
+       font-size: 16px;
+       color: #8B4513;
+       display: inline-block;
+     }
+ 
+     .faq-answer {
+       display: none;
+       padding-top: 8px;
+       font-size: 14px;
+       color: #333;
+     }
+ 
+     .faq-icon {
+       font-weight: bold;
+       font-size: 18px;
+       float: right;
+     }
+ 
+     .faq-item.active .faq-answer {
+       display: block;
      }
  
      footer {
@@ -93,7 +114,7 @@
  
      @media (max-width: 768px) {
        header h1 {
-         font-size: 28px;
+         font-size: 24px;
        }
  
        h2 {
@@ -128,26 +149,39 @@
      <!-- FAQ Section -->
      <div class="section">
        <h2>FAQ: How Inquiries Work</h2>
-       <p>Our platform allows users to send inquiries directly to sellers. Here's the process:</p>
-       <ul>
-         <li>Browse products listed by various boutiques.</li>
-         <li>Click on "Send Inquiry" for any product you like.</li>
-         <li>Your inquiry goes directly to the seller via WhatsApp (no payment processed by us).</li>
-         <li>Sellers will respond to confirm availability, price, or any other details.</li>
-         <li>All negotiations, payment, and delivery are handled directly between you and the seller.</li>
-       </ul>
-       <p>Klean Loom ensures inquiries reach sellers safely and promptly.</p>
-     </div>
- 
-     <!-- Social Media Section -->
-     <div class="section">
-       <h2>Follow Us on Social Media</h2>
-       <p>Stay updated with new collections, offers, and updates from Klean Loom:</p>
-       <div class="social-links">
-         <a href="https://www.instagram.com/kleanloom" target="_blank">Instagram</a>
-         <a href="https://www.facebook.com/kleanloom" target="_blank">Facebook</a>
-         <a href="https://twitter.com/kleanloom" target="_blank">Twitter</a>
+       
+       <div class="faq-item">
+         <h3>How do I send an inquiry?</h3>
+         <span class="faq-icon">+</span>
+         <div class="faq-answer">
+           Browse products and click "Send Inquiry". Your inquiry will go to the seller via WhatsApp.
+         </div>
        </div>
+ 
+       <div class="faq-item">
+         <h3>Do I have to pay through Klean Loom?</h3>
+         <span class="faq-icon">+</span>
+         <div class="faq-answer">
+           No. All payments and negotiations are directly handled between you and the seller.
+         </div>
+       </div>
+ 
+       <div class="faq-item">
+         <h3>Can I contact multiple sellers for the same product?</h3>
+         <span class="faq-icon">+</span>
+         <div class="faq-answer">
+           Yes, you can send inquiries to multiple sellers if the product is listed by more than one boutique.
+         </div>
+       </div>
+ 
+       <div class="faq-item">
+         <h3>Is my personal info shared with sellers?</h3>
+         <span class="faq-icon">+</span>
+         <div class="faq-answer">
+           Only the details necessary to process your inquiry are shared. We do not sell your data.
+         </div>
+       </div>
+ 
      </div>
  
    </div>
@@ -156,5 +190,25 @@
      <p>Contact Us: kleanloom@gmail.com | &copy; 2026 Klean Loom</p>
    </footer>
  
+   <script>
+     // FAQ accordion dropdown logic
+     const faqs = document.querySelectorAll('.faq-item');
+     faqs.forEach(item => {
+       const icon = item.querySelector('.faq-icon');
+       item.addEventListener('click', () => {
+         // Close others
+         faqs.forEach(i => {
+           if(i !== item) {
+             i.classList.remove('active');
+             i.querySelector('.faq-icon').textContent = '+';
+           }
+         });
+         // Toggle clicked
+         item.classList.toggle('active');
+         icon.textContent = item.classList.contains('active') ? '-' : '+';
+       });
+     });
+   </script>
+ 
  </body>
-   </html>
+        </html>
