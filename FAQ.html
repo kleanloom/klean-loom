@@ -1,234 +1,344 @@
- <!doctype html>
- <html lang="en">
- <head>
-   <meta charset="utf-8"/>
-   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-   <title>Klean Loom - Homepage</title>
-   <style>
-     body {
-       font-family: "Segoe UI", Arial, sans-serif;
-       margin: 0;
-       padding: 0;
-       background: #f8f9fc;
-       color: #333;
-       line-height: 1.7;
-     }
- 
-     .container {
-       max-width: 1000px;
-       margin: 0 auto;
-       padding: 0 15px;
-     }
- 
-     /* Hero Section */
-     .hero {
-       background: #fff0e6; /* Klean Loom brown light bg */
-       padding: 80px 20px 40px 20px; /* reduced height */
-       text-align: center;
-       border-bottom: 1px solid #ddd;
-     }
-     .hero h1 {
-       color: #8B4513; /* Klean Loom brown */
-       font-size: 28px;
-       margin-bottom: 10px;
-     }
-     .hero p {
-       font-size: 16px;
-       color: #555;
-     }
- 
-     /* FAQ Section */
-     .section {
-       background: #fff;
-       padding: 20px 25px;
-       border-radius: 12px;
-       box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-       margin: 20px 0;
-     }
-     .section h2 {
-       color: #8B4513;
-       font-size: 20px;
-       margin-bottom: 15px;
-     }
- 
-     .faq-item {
-       border-bottom: 1px solid #ddd;
-       padding: 10px 0;
-     }
-     .faq-header {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       cursor: pointer;
-     }
-     .faq-header h3 {
-       margin: 0;
-       font-size: 16px;
-       color: #8B4513;
-     }
-     .faq-icon {
-       font-weight: bold;
-       font-size: 20px;
-       transition: transform 0.2s;
-     }
-     .faq-item.active .faq-icon {
-       transform: rotate(45deg);
-     }
-     .faq-answer {
-       display: none;
-       padding-top: 8px;
-       font-size: 14px;
-       color: #333;
-     }
- 
-     /* Why choose section */
-     .why-choose {
-       padding: 20px;
-       background: #fff0e6;
-       border-radius: 12px;
-       margin-bottom: 20px;
-     }
-     .why-choose h2 {
-       color: #8B4513;
-       margin-bottom: 15px;
-     }
-     .why-choose ul {
-       padding-left: 20px;
-     }
-     .why-choose ul li {
-       margin-bottom: 8px;
-     }
- 
-     /* Social Media Icons */
-     .social-media {
-       text-align: center;
-       margin: 30px 0;
-     }
-     .social-media a {
-       text-decoration: none;
-       color: #8B4513;
-       font-size: 24px;
-       margin: 0 12px;
-       transition: transform 0.2s;
-     }
-     .social-media a:hover {
-       transform: scale(1.2);
-     }
- 
-     /* Responsive */
-     @media (max-width: 600px) {
-       .hero h1 {
-         font-size: 22px;
-       }
-       .hero p {
-         font-size: 14px;
-       }
-       .faq-header h3 {
-         font-size: 14px;
-       }
-       .faq-icon {
-         font-size: 18px;
-       }
-     }
-   </style>
- </head>
- <body>
- 
- <div class="container">
-   <!-- Hero -->
-   <div class="hero">
-     <h1>Welcome to Klean Loom</h1>
-     <p>Discover the best clothing and boutiques, send inquiries, and connect directly with sellers.</p>
-   </div>
- 
-   <!-- FAQ Section -->
-   <div class="section">
-     <h2>FAQ: How Inquiries Work</h2>
- 
-     <div class="faq-item">
-       <div class="faq-header">
-         <h3>How do I send an inquiry?</h3>
-         <span class="faq-icon">+</span>
-       </div>
-       <div class="faq-answer">
-         Browse products and click "Send Inquiry". Your inquiry will go to the seller via WhatsApp.
-       </div>
-     </div>
- 
-     <div class="faq-item">
-       <div class="faq-header">
-         <h3>Do I have to pay through Klean Loom?</h3>
-         <span class="faq-icon">+</span>
-       </div>
-       <div class="faq-answer">
-         No. All payments and negotiations are directly handled between you and the seller.
-       </div>
-     </div>
- 
-     <div class="faq-item">
-       <div class="faq-header">
-         <h3>Can I contact multiple sellers for the same product?</h3>
-         <span class="faq-icon">+</span>
-       </div>
-       <div class="faq-answer">
-         Yes, you can send inquiries to multiple sellers if the product is listed by more than one boutique.
-       </div>
-     </div>
- 
-     <div class="faq-item">
-       <div class="faq-header">
-         <h3>Is my personal info shared with sellers?</h3>
-         <span class="faq-icon">+</span>
-       </div>
-       <div class="faq-answer">
-         Only the details necessary to process your inquiry are shared. We do not sell your data.
-       </div>
-     </div>
- 
-   </div>
- 
-   <!-- Why Choose Klean Loom -->
-   <div class="why-choose section">
-     <h2>Why Choose Klean Loom?</h2>
-     <ul>
-       <li>Direct inquiries to verified sellers</li>
-       <li>No mandatory payments through the platform</li>
-       <li>Easy access to trending collections</li>
-       <li>Secure and simple user experience</li>
-     </ul>
-   </div>
- 
-   <!-- Social Media -->
- <div class="social-media">
-   <a href="https://www.instagram.com/klean_loom" target="_blank" title="Instagram">
-     <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width:30px; height:30px;">
-   </a>
- </div>
- 
- </div>
- 
- <script>
-   const faqs = document.querySelectorAll('.faq-item');
-   faqs.forEach(item => {
-     const icon = item.querySelector('.faq-icon');
-     const header = item.querySelector('.faq-header');
-     header.addEventListener('click', () => {
-       // Close others
-       faqs.forEach(i => {
-         if(i !== item) {
-           i.classList.remove('active');
-           i.querySelector('.faq-icon').textContent = '+';
-           i.querySelector('.faq-answer').style.display = 'none';
-         }
-       });
-       // Toggle clicked
-       item.classList.toggle('active');
-       icon.textContent = item.classList.contains('active') ? '-' : '+';
-       const answer = item.querySelector('.faq-answer');
-       answer.style.display = item.classList.contains('active') ? 'block' : 'none';
-     });
-   });
- </script>
- 
- </body>
- </html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Klean Loom</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --brown:#a46d14;
+  --cream:#f6efe9;
+  --black:#1c1c1c;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Poppins, sans-serif;
+  background:var(--cream);
+  color:var(--black);
+  line-height:1.7;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd53?auto=format&fit=crop&w=1600&q=80');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero h1{
+  font-family:"Playfair Display", serif;
+  font-size:48px;
+  color:#fff;
+  margin-bottom:14px;
+}
+
+.hero p{
+  color:#eee;
+  max-width:520px;
+  margin:auto;
+  font-size:15px;
+}
+
+.hero .cta{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 36px;
+  border:1px solid #fff;
+  color:#fff;
+  text-decoration:none;
+  border-radius:40px;
+  font-size:14px;
+  letter-spacing:1px;
+  transition:.4s;
+}
+
+.hero .cta:hover{
+  background:#fff;
+  color:#000;
+}
+
+/* CONTAINER */
+.container{
+  max-width:1000px;
+  margin:60px auto;
+  padding:0 20px;
+}
+
+/* SECTION CARD */
+.section{
+  background:#fff;
+  padding:30px;
+  border-radius:24px;
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
+  margin-bottom:40px;
+}
+
+.section h2{
+  font-family:"Playfair Display", serif;
+  color:var(--brown);
+  margin-bottom:20px;
+  text-align:center;
+}
+
+/* FAQ */
+.faq-item{
+  border-bottom:1px solid #ddd;
+  padding:15px 0;
+}
+
+.faq-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:pointer;
+}
+
+.faq-header h3{
+  font-size:15px;
+  margin:0;
+  color:var(--brown);
+}
+
+.faq-icon{
+  font-size:22px;
+  font-weight:bold;
+  transition:.3s;
+}
+
+/* ===== FAQ ANIMATION ===== */
+.faq-answer{
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-top:0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding-top 0.3s ease;
+}
+
+.faq-item.open .faq-answer{
+  max-height: 300px;
+  opacity: 1;
+  padding-top:10px;
+}
+
+/* WHY */
+.why ul{
+  list-style:none;
+  padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+
+.why li{
+  padding-left:26px;
+  position:relative;
+}
+
+.why li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  color:var(--brown);
+  font-weight:bold;
+}
+
+/* SOCIAL */
+.social-media{
+  text-align:center;
+  margin-top:40px;
+}
+
+.social-media img{
+  width:32px;
+  margin:0 12px;
+  transition:.3s;
+}
+
+.social-media img:hover{
+  transform:scale(1.2);
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .hero h1{font-size:34px}
+}
+
+/* ===== SCROLL ANIMATION ===== */
+.section{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.section.show{
+  opacity:1;
+  transform: translateY(0);
+}
+
+/* ===== HERO ANIMATION ===== */
+.hero-title,
+.hero-text,
+.hero-cta {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.hero.show .hero-title {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.hero.show .hero-text {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+
+.hero.show .hero-cta {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h1 class="hero-title">Welcome to Klean Loom</h1>
+    <p class="hero-text">Discover the best clothing and boutiques,  
+       send inquiries, and connect directly with sellers.</p>
+    <a href="https://kleanloom.com" class="cta hero-cta">EXPLORE COLLECTIONS</a>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- FAQ -->
+<div class="section">
+  <h2>How Inquiries Work</h2>
+
+  <div class="faq-item">
+    <div class="faq-header">
+      <h3>How do I send an inquiry?</h3>
+      <span class="faq-icon">+</span>
+    </div>
+    <div class="faq-answer">
+      Browse products and click "Send Inquiry". Your inquiry goes directly to the seller via WhatsApp.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-header">
+      <h3>Do I have to pay through Klean Loom?</h3>
+      <span class="faq-icon">+</span>
+    </div>
+    <div class="faq-answer">
+      No. Payments and negotiations happen directly with the seller.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-header">
+      <h3>Can I contact multiple sellers for the same product?</h3>
+      <span class="faq-icon">+</span>
+    </div>
+    <div class="faq-answer">
+      Yes, you can contact multiple boutiques for the same product.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-header">
+      <h3>Is my personal info shared with sellers?</h3>
+      <span class="faq-icon">+</span>
+    </div>
+    <div class="faq-answer">
+      Only necessary details are shared. Your data is never sold.
+    </div>
+  </div>
+</div>
+
+<!-- WHY -->
+<div class="section why">
+  <h2>Why Choose Klean Loom</h2>
+  <ul>
+    <li>Direct inquiries to verified sellers</li>
+    <li>No forced platform payments</li>
+    <li>Trending & exclusive collections</li>
+    <li>Simple and secure experience</li>
+  </ul>
+</div>
+
+<!-- SOCIAL -->
+<div class="social-media">
+  <a href="https://www.instagram.com/klean_loom" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+  </a>
+
+  <a href="https://www.facebook.com/share/17oQsQCfot/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook">
+  </a>
+</div>
+
+</div>
+
+<script>
+// Hero animation on page load
+window.addEventListener('load', () => {
+  document.querySelector('.hero').classList.add('show');
+});
+
+// FAQ animation (smooth open/close)
+document.querySelectorAll('.faq-item').forEach(item=>{
+  const header = item.querySelector('.faq-header');
+  const icon = item.querySelector('.faq-icon');
+
+  header.addEventListener('click', ()=>{
+    document.querySelectorAll('.faq-item').forEach(i=>{
+      if(i !== item){
+        i.classList.remove('open');
+        i.querySelector('.faq-icon').textContent = "+";
+      }
+    });
+
+    item.classList.toggle('open');
+    icon.textContent = item.classList.contains('open') ? "-" : "+";
+  });
+});
+
+// Scroll fade-in animation
+const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+},{ threshold:0.2 });
+
+sections.forEach(sec => observer.observe(sec));
+</script>
+
+</body>
+</html>
